@@ -1,0 +1,54 @@
+.userCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    gap: 10px;
+}
+.container{
+    border: 1px solid black;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: turquoise;
+    width: 400px;
+}
+.profileHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    width: 40px;
+    position: relative;
+    left: 15px;
+}
+.pp{
+    border-radius: 50%;
+}
+button{
+    padding: 20px;
+    border: red .7px solid;
+    background-color: salmon;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(250, 128, 114, 0.685);
+    cursor: pointer;
+}
