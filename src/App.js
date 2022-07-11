@@ -2,17 +2,18 @@ import { useEffect, useState } from 'react';
 import axios from "axios";
 
 const App = () => {
-  const[user,setUser]=useState([]);
+  const[user,setUser]=useState();
 
   useEffect(() => {
   
 const userList=async()=>{
   try{
-    const {user: response} = await axios.get("https://randomuser.me/api/");
-    setUser(response);
+    const {data} = await axios.get("https://randomuser.me/api/");
+    setUser(data);
   }catch(error){
-    console.error(error.message);
+    console.log(error);
   }}
+  
   userList();
  }, []);
 
